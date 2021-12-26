@@ -1,0 +1,485 @@
+:root{
+    --rojo: #CD5C5C;
+    --naranja: #EB863D;
+    --cian: #3DDCEB;
+    --petroleo: #09919E;
+    --fontsub: julius sans one 
+    --fonth1: gruppo
+    --fontnav: raleway
+    --fontoverlay: poiret one
+    --step--2: clamp(0.91rem, 0.89rem + 0.10vw, 0.96rem);
+    --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.20rem);
+    --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.50rem);
+    --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+    --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+    --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+    --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+    --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.header_index {
+background-image: url(./Multimedia/fondos/sincerely-media-p-NQlmGvFC8-unsplash.jpg);
+background-repeat:no-repeat;
+background-size: 100%;
+}
+.header_index input{
+    display: none;
+}
+
+.header_index label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    border-right: 1px solid whitesmoke;
+}
+
+.header_index h1, 
+.header_index h2 {
+color: whitesmoke;
+margin-left: 40px;
+}
+
+.header_index h1 {
+    padding-top: 20px;
+    font-family: julius sans one serif;
+    font-size: var(--step-5);
+}
+
+.header_index h2 {
+font-family: julius sans one;
+font-size: var(--step-1);
+font-variant: small-caps;
+font-stretch: 10;
+}
+
+.header_index nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: raleway;
+    font-weight: 700;
+}
+
+ nav ul a:hover {
+     opacity: 0.6;
+     color: black;
+ }
+
+main section {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image {
+    position: relative;
+  }
+  
+  .img {
+    display: block;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.6s;
+    font-family: poiret one;
+  }
+  
+  .overlay:hover {
+      opacity: 1;
+  }
+  
+  .title {
+      font-size:  2em;
+      font-weight: bold;
+  }
+  
+  .description {
+      font-size: 1.25em;
+      margin-top: 0.25em;
+  }
+
+  section article {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      color: black;
+      margin: auto;
+  }
+
+  section article div {
+padding: 30px;
+font-family: raleway;
+  }
+
+.titulo_about {
+    font-size: 4vh;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.texto_about {
+    font-size: 2vh;
+    line-height: 30px;
+    }
+    
+  .img_about{
+      display: block;
+      width: 100%;
+  }
+
+  footer {
+    background-image: url(./Multimedia/fondos/sincerely-media-p-NQlmGvFC8-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-size: 100vw;
+  }
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+  .datos {
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      list-style: none;
+      padding-left: 30px;
+      font-family: raleway;
+    }
+
+    .li1 {
+        font-weight: 700;
+    }
+
+.redes{
+    list-style: none;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 30px;
+    flex-direction: column;
+    font-family: raleway;
+    font-weight: 700;
+
+}
+.instagram{
+    background-image:url(./Multimedia/Iconos/instagram.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+
+}
+.twitter{
+    background-image: url(./Multimedia/Iconos/logotipo-de-twitter.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+div ul li a:hover {
+    opacity: 0.6;
+}
+
+/* SECCIÓN EDITORIAL & BEAUTY */
+
+.intro_editorial{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.texto_ed {
+    display: flex;
+    flex-direction: column;
+    font-family: raleway;
+    align-items: center;
+}
+
+.texto_ed h3 {
+    font-size: var(--step-5);
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding: 20px;
+}
+
+.texto_ed h4{
+    align-self: flex-start;
+    font-size: var(--step-3);
+    opacity: 0.6;
+    margin: 30px;
+
+}
+
+.texto_ed p{
+width: 60%;
+margin-left: 30px;
+align-self: flex-start;
+font-size: var(--step--1);
+letter-spacing: 1px;
+line-height: 30px;
+}
+
+.galeria{
+    font-family: raleway;
+    font-size: var(--step-2);
+    margin: 30px;
+}
+
+.galeria_editorial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+}
+.imged1{
+    grid-column: 1/span 1;
+    grid-row: 1/span 3 ;
+}
+.imged2 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 3 ;
+}
+
+.imged3{
+    grid-column: 3/span 1;
+    grid-row: 1/span 3 ;
+}
+
+.imged4{
+    grid-column: 3/span 1;
+    grid-row: 4/span 2 ;
+}
+
+.imged5{
+    grid-column: 2/span 1;
+    grid-row: 1/span 2 ;
+    align-self: flex-end;
+}
+
+.imged6 {
+    grid-column: 1/span 1;
+    grid-row: 4/span 2 ;
+    justify-self: flex-end;
+}
+/* FIN SECCIÓN EDITORIAL & BEAUTY */
+
+/*SECCIÓN BOUDOIR*/
+
+.galeria_boudoir{
+    display: flex;
+place-items: center;
+justify-content: center;
+margin: 80px 
+}
+
+.galeria_editorial_boudoir{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+}
+
+.imgbo1{
+    grid-column: 1/span 2;
+    grid-row: 1/span 2 ;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.imgbo2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 1 ;
+    align-self: flex-end;
+}
+
+.imgbo3{
+    grid-column: 3/span 1;
+    grid-row: 2/span 1;
+}
+
+.imgbo4{
+    grid-column: 4/span 1;
+    grid-row: 2/span 1 ;
+}
+
+.imgbo1_1{
+    grid-column: 3/span 2;
+    grid-row: 1/span 2 ;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+
+.imgbo2_2 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 1 ;
+    align-self: flex-end;
+}
+
+.imgbo3_3{
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+}
+
+.imgbo4_4{
+    grid-column: 2/span 1;
+    grid-row: 2/span 1 ;
+}
+
+.volver{
+    display: flex;
+    font-family: raleway;
+    justify-content: flex-end;
+    font-size: var(--step-2);
+    opacity: 90%;
+    border-radius: 15px;
+    padding: 15px;
+    margin-right: 200px;
+}
+/* FIN SECCIÓN BOUDOIR */
+
+/* SECCIÓN ABOUT */
+
+.intro_about{
+display: flex;
+justify-content: space-around;
+flex-direction: row-reverse;
+width: 100%;
+height: auto;
+margin: 0 auto;
+margin-top: 50px;
+margin-left: 500px;
+}
+
+/* FIN SECCIÓN ABOUT */
+
+/* SECCION CONTACTO */
+.form {
+    padding: 30px;
+    background-color: whitesmoke;
+    opacity: 0.95;
+    margin-top: 5%;
+    border-radius: 30px;
+    position: relative;
+    font-family: poiret one;
+    width: 400px;
+    size: 200px 400px;
+}
+
+.fondo_contacto {
+    display: flex;
+    flex-direction: column;
+        margin: 50px;
+}
+
+.fotoyformulario{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+}
+
+.foto_contacto {
+    border-radius: 20px;
+    margin: 30px;
+}
+
+input{
+    width: 300px;
+    font-size: 20px;
+    font-family: raleway;
+}
+
+label{
+    font-size: 20px;
+    font-family: raleway;
+    font-weight: 700;
+}
+
+.googlemaps{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+/* FIN DE SECCION CONTACTO */      
+
+
+@media screen and (max-width: 768px) {
+
+    .header_index label {
+        display: block;
+    }
+
+    .header_index nav ul {
+        position: absolute;
+        background-color: var(--naranja);
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+        
+    .menu {
+        flex-direction: column;
+        border-top: 1px solid whitesmoke;
+
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    .section_portada {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+
+    .header_index {
+
+    }
+
+}
+
+@media  screen and (max-width: 320) {
+    
+}
