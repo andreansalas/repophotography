@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,8 +33,14 @@
       <section>
         <div class="intro_editorial reverse">
           <div class="texto_ed">
-            <h2>BEAUTY</h2>
-            <h3>Tu piel 3d</h3>
+            <h2 data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="100"
+            data-aos-duration="700">BEAUTY</h2>
+            <h3 data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500">Tu piel 3d</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
               magni enim ex quidem iure id voluptatum nihil vel molestiae, natus
@@ -43,7 +51,7 @@
             </p>
           </div>
           <div class="portada_editorial">
-            <img
+            <img class="sombrita"
               src="../Multimedia/Fotos Beauty/Portada Beauty2.jpg"
               alt="Beauty Portada"
             />
@@ -107,5 +115,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

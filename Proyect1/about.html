@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -32,8 +34,14 @@
         <div class="intro_about">
           <div class="texto_ed">
             <div>
-            <h2> Un poco de mí...</h2>
-            <h3>¡hola!</h3>
+            <h2 data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="100"
+            data-aos-duration="700"> Un poco de mí...</h2>
+            <h3 data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500">¡hola!</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
               quaerat sequi beatae soluta numquam minus ut a. Unde voluptates
@@ -48,13 +56,13 @@
           </div>
           </div>
           <div>
-            <img
+            <img class="sombrita" 
               src="../Multimedia/About/Beauty grande 3.jpg"
               alt="portada_about1"
             />
           </div>
         </div>
-        <div class="volver">
+        <div class="volver" class: "hvr-grow">
           <a href="./contacto.html">
             <button class="volver">¡Contactame!</button></a
           >
@@ -80,5 +88,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

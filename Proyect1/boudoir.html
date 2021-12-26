@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,14 +32,18 @@
     <main>
       <div class="intro_editorial">
       <div class="texto_ed">
-        <h2 id="boudoir">FOTOGRAFÍA BOUDOIR</h2>
+        <h2 data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-duration="700" id="boudoir">FOTOGRAFÍA BOUDOIR</h2>
         <article>
-         <h3>¿Qué es?</h3>
+         <h3 data-aos="fade-right"
+         data-aos-offset="500"
+         data-aos-duration="1500" >¿Qué es?</h3>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At incidunt ex, nemo soluta explicabo similique cumque vero ad vel consequatur quis. Voluptatibus non rem quae, numquam ab nemo deleniti dolorem excepturi quam sunt inventore, consectetur ut voluptate, reiciendis officiis pariatur quia fugiat! Eaque a atque quidem reiciendis, sapiente nisi. Eaque.</p>
         </article>
       </div>
       <div>
-        <img src="../Multimedia/Fotos Boudoir/Portada boudoir.jpg" alt="portada_boudoir">
+        <img class="sombrita" src="../Multimedia/Fotos Boudoir/Portada boudoir.jpg" alt="portada_boudoir">
       </div>
     </div>
 
@@ -181,5 +187,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
